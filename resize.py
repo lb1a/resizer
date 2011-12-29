@@ -27,5 +27,5 @@ for i in range(1, len(sys.argv)):
     # Split our original filename into name and extension
     (name, extension) = os.path.splitext(filepath)
 
-    # Save the thumbnail as "(original_name)_thumb.png"
-    image.save(name + '_small.png')
+    # Save the thumbnail as "(original_name)_small.(extension)"
+    image.save(name + '_small.'+ extension)
